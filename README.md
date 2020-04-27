@@ -68,11 +68,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-<highlight>
-When submitting the form:
+
+**When submitting the form:
 a.If the email field does not validate, an error message should be rendered.
 b.If the email field is valid, the form should submit and log the value of each field in the browser console without refreshing the page.
 c.It will show a loading state for 2 seconds, to simulate an HTTP request. 
 d.It should allow only a single submission. That is, subsequent attempts to submit should be ignored after the initial submission. 
 e.After the simulated request, a "thank you" message should replace the form without refreshing the page.
-  </highlight>
+**
