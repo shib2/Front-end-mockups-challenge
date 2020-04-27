@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row, Form, FormGroup, Input, FormFeedback, DropdownToggle, ButtonDropdown} from 'reactstrap';
+import { Col, Row, Form, FormGroup, Input, FormFeedback, DropdownToggle, ButtonDropdown, Button} from 'reactstrap';
 import { Redirect } from 'react-router-dom';
 
 class Forms extends Component {
@@ -95,7 +95,7 @@ class Forms extends Component {
 
     	 return(
     	 	<div className = "container">
-    	 	<p>Prepare for your career with a Project Management, Web-Development, Graphic design, or Digital Marketing Internship at Northern.</p>
+    	 	<p>Prepare for your career with a Project Management, Web-Development, Graphic design, or Digital Marketing Internship.</p>
     	 		<div className="row row-content">
     	 			<div className="col-12">
     	 				<Form onSubmit={this.handleSubmit}>
@@ -128,11 +128,9 @@ class Forms extends Component {
       						<Row form>
       							<Col md={12}>
       								{this.renderRedirect()}
-									<ButtonDropdown direction="right" onClick={this.handleSubmit} >
-									<DropdownToggle caret>
-							        {this.submit()}
-							     	</DropdownToggle>
-									</ButtonDropdown>
+									<Button onClick={this.handleSubmit}>
+                  {this.submit()}
+                  </Button>
 								</Col>
       						</Row>
 						</Form>
